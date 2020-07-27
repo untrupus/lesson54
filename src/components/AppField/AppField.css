@@ -1,0 +1,9 @@
+.AppField {
+    text-align: center;
+    width: 540px;
+    height: 540px;
+    margin: 20px auto;
+    border: 3px solid darkgray;
+    padding: 10px;
+    border-radius: 10px;
+}

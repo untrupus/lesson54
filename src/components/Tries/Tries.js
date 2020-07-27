@@ -1,4 +1,5 @@
 import React from "react";
+import './Tries.css';
 
 const Tries = props => {
     return (

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
-import Square from "../components/Square/Square";
 import Tries from "../components/Tries/Tries";
 import Reset from "../components/Reset/Reset";
-
+import AppField from "../components/AppField/AppField";
 
 function App() {
+
     const getSquares = () => {
         const squares = [];
         for (let i = 0; i < 36; i++) {
@@ -55,21 +55,9 @@ function App() {
         setSquareField(getSquares);
     }
 
-    let newSquares = squareField.map((square) => {
-        return (
-            <Square key={square.id}
-                    open={square.open}
-                    ring={square.hasItem}
-                    click={() => openSquare(square.id)}
-            />
-        )
-    });
-
     return (
         <div className="container">
-            <div className="App">
-                {newSquares}
-            </div>
+            <AppField content={squareField} click={openSquare} />
             <Tries amount={tries[0].counter}/>
             <Reset game={clickReset}/>
         </div>
