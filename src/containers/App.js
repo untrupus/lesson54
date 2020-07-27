@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
-import Square from "./components/Square/Square";
-import Tries from "./components/Tries/Tries";
-import Reset from "./components/Reset/Reset";
+import Square from "../components/Square/Square";
+import Tries from "../components/Tries/Tries";
+import Reset from "../components/Reset/Reset";
 
 
 function App() {
